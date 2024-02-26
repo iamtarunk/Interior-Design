@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --white:#ffffff;
+    --red : #ff565b;
+    --tred : #ff565cd5;
+    --black : #000000;
+}
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 0% 8%;
+    margin-top: 0px;
+    font-size: 15px;
+    background-color: #0000008f;
+    z-index: 1;
+}
+.navbar a{
+    margin:12px 16px;
+}
+.navbar ul{
+    display: inline-flex;
+    list-style: none;
+    width:100%;
+    justify-content: flex-end;
+    margin-top:14px;
+}
+.navbar ul li{
+    padding: 0px 11px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:var(--white);
+    transition: color 0.5s ease;
+}
+.navbar ul li .activelink{
+    background-color: var(--white);
+    color:var(--red);
+    padding:13px 22px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top:10px solid var(--red);
+}
+.navbar ul li a:hover{
+    color:var(--red);
+}
+.header{
+    background-image: url("../images/banner-bg.jpg");
+    height: 127vh;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    padding:270px 0px 170px 0px;
+    color: var(--white);
+}
+.header h6{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: bolder;
+    margin:5px 0px;
+}
+.header h2,span{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+.header h2 span{
+    color: var(--red);
+}
+.header a{
+    padding: 11px 24px;
+    background-color: var(--white);
+    border-radius: 6px;
+    text-decoration: none;
+    color:var(--red);
+    font-size: 14px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.header a:hover{
+    background-color: var(--red);
+    color:var(--white);
+}
+.overheader{
+    background-color: var(--white);
+    width:83%;
+    margin: auto;
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.137);
+    position: relative;
+    transform: translateY(-50%);
+}
+.overheader form{
+    padding: 60px;
+}
+.overheader .component{
+    width:100%;
+    color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+}
+.overheader .component .comp{
+    width: 25%;
+}
+.overheader .component .compsearch{
+    width: 100%;
+}
+.overheader .component .compsearch button{
+    width:100%;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    color: var(--white);
+    background-color: var(--red);
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.5s ease;
+}
+.overheader .component .compsearch button:hover{
+    background-color: var(--black);
+}
+.overheader .component input,
+.overheader .component select{
+    height:40px;
+    margin: 30px 0px 30px 0px;
+    border: 1px solid #e6e1e1;
+    border-radius: 7px;
+    width: 90%;
+    padding:0px 10px;
+}
+.section1{
+    margin:0%  6%;
+    display: block;
+}
+.section1 .sectionheader{
+    width: 100%;
+    margin:0px 0px 20px 0px;
+    padding:0px 10px;
+}
+.section1 .sectionheader h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.section1 .sectionheader h1 em{
+    font-style: normal;
+    color: var(--red);
+}
+.section1 .sectionheader h1 em::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 7%;
+    background-color: var(--red);
+    margin:0px 15px 0px 0px;
+    vertical-align: middle;
+}
+.section1 .leftsection{
+    width: 50%;
+    float: left;
+    padding:0px 10px;
+}
+.section1 .leftsection img{
+    width:100%;
+    border-radius: 8px;
+}
+.section1 .rightsection{
+    display: inline-flex;
+    width: 45%;
+    padding:0px 10px;
+    margin-left: 4%;
+}
+.section1 .rightsection ul{
+    list-style: none;
+    width: 100%;
+}
+.section1 .rightsection ul li{
+    margin-bottom: 50px;
+}
+.section1 .rightsection ul li h3{
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    border-bottom: 1.5px solid #cccccc;
+}
+.section1 .rightsection ul li .content li p{
+    font-size: 15px;
+    padding: 10px 0px;
+    color: #929191;
+}
+.section1 .rightsection ul li .content li p svg{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.section1 .rightsection ul li .content li a{
+    font-size: 18px;
+    text-decoration: none;
+    color:var(--black);
+    font-weight: bold;
+    line-height: 50px;
+    transition: color 0.5s ease;
+}
+.section1 .rightsection ul li .content li a:hover{
+    color:var(--red);
+}
+.section1 .rightsection ul li .content li div{
+    display: flex;
+}
+.section1 .rightsection ul li .content li div p{
+    width: 50%;
+}
+.section2{
+    padding:100px 0px;
+    display: flex;
+    align-items: center;
+}
+.section2 .leftsection{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding:0px 100px 0px 100px;
+    align-items: flex-start;
+}
+.section2 .leftsection h1{
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.section2 .leftsection h1 em{
+    font-style: normal;
+    color: var(--red);
+}
+.section2 .leftsection h1 em::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 80px;
+    background-color: var(--red);
+    margin:0px 15px 0px 0px;
+    vertical-align: middle;
+}
+.section2 .leftsection p{
+    color: #5c5858;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.section2 .leftsection a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--red);
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-size: 14.5px;
+    transition: background-color 0.5s ease;
+}
+.section2 .leftsection a:hover{
+    background-color: var(--black);
+}
+.section2 .rightsection{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.section2 .rightsection .hoverdiv{
+    background-image: url("../images/section-img1.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 500px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width:100%;
+}
+.section2 .rightsection .hoverdiv .hovercontent{
+    width: 100%;
+    position: absolute;
+    top:0;
+    height:100%;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 1s ease;
+}
+.section2 .rightsection .hoverdiv .hovercontent a{
+    text-decoration: none;
+    color:var(--white);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.section2 .rightsection .hoverdiv .hovercontent p{
+    color:var(--white);
+}
+.section2 .rightsection .hoverdiv .hovercontent:hover{
+    background-color: var(--tred);
+    opacity: 1;
+    border-radius: 10px;
+}
+.section2 .rightsection .hoverdiv .hovercontent:not(hover){
+    background-color: var(--tred);
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+}
+.section2 .rightsection .hoverdiv .hovercontent:hover a{
+    position: relative;
+    animation: fromleft 0.5s ease;
+}
+.section2 .rightsection .hoverdiv .hovercontent:not(hover) a{
+    position: relative;
+    animation: fromleftback 0.5s ease;
+}
+.section2 .rightsection .hoverdiv .hovercontent:hover p{
+    position: relative;
+    animation: fromright 0.5s ease;
+}
+.section2 .rightsection .hoverdiv .hovercontent:not(hover) p{
+    position: relative;
+    animation: fromrightback 0.5s ease;
+}
+@keyframes fromleft{
+    0%{left:-20px;}
+    100%{left:0px;}
+}
+@keyframes fromleftback{
+    0%{left:0px;}
+    100%{left:-20px;}
+}
+@keyframes fromright{
+    0%{left:20px;}
+    100%{left:0px;}
+}
+@keyframes fromrightback{
+    0%{left:0px;}
+    100%{left:20px;}
+}
+.section2 .rightsection .normalimage{
+    border-radius: 10px;
+    transform: translateX(-7px);
+    z-index: -1;
+    width:50%;
+    height: 300px;
+}
+.section3{
+    background-image: url("../images/contact-us-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 789px;
+    padding:120px;
+    display: flex;
+}
+.section3 .leftsection{
+    width:50%;
+    background-color: var(--white);
+    padding:70px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.section3 .leftsection form h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.section3 .leftsection form h1 em{
+    color:var(--red);
+    font-style: normal;
+}
+.section3 .leftsection form h1 em::before{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 80px;
+    background-color: var(--red);
+    margin:0px 15px 0px 0px;
+    vertical-align: middle;
+}
+.section3 .leftsection form .details{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section3 .leftsection form .details input[type="text"]{
+    width:45%;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid #cccccc;
+    margin: 5px 6px 5px 6px;
+    padding: 10px;
+}
+.section3 .leftsection form .details textarea{
+    width:400px;
+    margin:5px;
+    resize:none;
+    height: 120px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding:10px;
+}
+.section3 .leftsection form button{
+    width:100%;
+    background-color:var(--red);
+    color:var(--white);
+    border:0;
+    height:40px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.section3 .leftsection form button:hover{
+    background-color: var(--black);
+}
+.section3 .rightsection{
+    width:50%;
+}
+.section3 .rightsection iframe{
+    background-color: var(--white);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.footer{
+    width: 100%;
+    padding:100px 100px 0px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.footer p{
+    font-size: 15px;
+    color:#686868;
+}
+.footer .firstrow{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+}
+.footer .firstrow .flex1{
+    min-width: 50%;
+    padding-right: 170px;
+}
+.footer .firstrow .flex1 .logo{
+    padding:20px;
+}
+.footer .firstrow .flex1 .description{
+    padding:20px;
+    line-height: 30px;
+}
+.footer .firstrow .flex2{
+    min-width:50%;
+    display: flex;
+    flex-direction: row;
+}
+.footer .firstrow .flex2 .commonflex{
+    max-height: 100%;
+    padding: 0px 10px;
+    margin:0px 20px 0px 0px;
+    line-height: 50px;
+}
+.footer .firstrow .flex2 .commonflex p a{
+    text-decoration: none;
+    color:#686868;
+    transition: color 0.5s ease;
+}
+.footer .firstrow .flex2 .commonflex p a svg{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer .firstrow .flex2 .commonflex p a:hover{
+    color: var(--red);
+}
+.footer .secondrow{
+    margin: 20px 20px;
+}
+.footer .secondrow form{
+    margin-left: 50%;
+    position: relative;
+}
+.footer .secondrow form div{
+    border-bottom:1px solid #cccccc;
+}
+.footer .secondrow form div input[type="email"]{
+    height:40px;
+    width:100%;
+    margin:20px 0px 0px 0px;
+    padding:10px;
+    border: 0;
+}
+.footer .secondrow form div button{
+    height: 40px;
+    width:80px;
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    background-color: transparent;
+    color:#686868;
+    border:0;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+.footer .secondrow form div button:hover{
+    color:var(--red);
+}
+.footer .thirdrow{
+    margin:20px ;
+    display: flex;
+}
+.footer .thirdrow .copyrights{
+    line-height: 30px;
+    min-width: 50%;
+}
+.footer .thirdrow .copyrights p a{
+    text-decoration: none;
+    color:var(--red);
+}
+.footer .thirdrow .toplink{
+    margin-left: auto;
+}
+.footer .thirdrow .toplink p a{
+    text-decoration: none;
+    color: #686868;
+    transition: color 0.5s ease;
+}
+.footer .thirdrow .toplink p a:hover{
+    color: var(--red);
+}
+
+/* Media queries */
+@media (min-width: 300px) and (max-width:1100px){
+    .navbar{
+        flex-direction: column;
+        position: sticky;
+        background-color: #000000d7;
+    }
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul li{
+        margin:30px 0px;
+    }
+    .navbar ul li .activelink{
+        border-top: 2px solid var(--red);
+        border-radius: 10px;
+    }
+    .overheader{
+        transform: translateY(-10%);
+    }
+    .overheader .component{
+        flex-direction: column;
+    }
+    .overheader .component .comp{
+        width:100%;
+    }
+    .section2{
+        flex-direction: column;
+    }
+    .section2 .leftsection{
+        width: 100%;
+        margin-bottom: 50px;
+        padding-left:50px;
+    }
+    .section2 .rightsection{
+        width: 100%;
+        padding:0px 50px;
+    }
+    .section3{
+        flex-direction: column;
+        height: 1400px;
+        background-size: cover;
+    }
+    .section3 .leftsection{
+        width:100%;
+        margin-bottom: 50px;
+        border-radius: 10px;
+    }
+    .section3 .rightsection{
+        width:100%;
+    }
+    .section3 .rightsection iframe{
+        border-radius: 10px;
+    }
+    .footer{
+        padding: 20px 20%;
+        align-items: center;
+    }
+    .footer .firstrow{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer .firstrow .flex1{
+        padding: 0;
+    }
+    .footer .firstrow .flex1 .logo{
+        text-align: center;
+    }
+    .footer .firstrow .flex1 .description{
+        padding: 20px 100px;
+    }
+    .footer .firstrow .flex2{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .secondrow{
+        width:100%;
+        text-align: center;
+    }
+    .footer .secondrow form{
+        margin:0;
+    }
+    .footer .thirdrow{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer .thirdrow .toplink{
+        margin: 0;
+    }
+}
+@media (min-width: 300px) and (max-width:700px){
+    .section1 .leftsection{
+        width:90%;
+    }
+    .section1 .rightsection{
+        width:90%;
+        margin-top:50px;
+        margin-left: 0;
+    }
+}
